@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehgez - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #2D2D2D;
+            --secondary-color: #5C7A78;
+            --accent-color: #F4A261;
+            --background-color: #F9F9F9;
+        }
+    </style>
+</head>
+
+<body class="bg-background-color flex justify-center items-center min-h-screen">
+    <div class="bg-white shadow-xl rounded-3xl p-8 max-w-md w-full border border-gray-200">
+        <div class="text-center mb-6">
+            <img src="logo.png" alt="Nehgez Logo" class="mx-auto w-32">
+            <h2 class="text-3xl font-semibold text-primary-color">Sign Up</h2>
+        </div>
+
+        <form action="#" method="POST" class="space-y-4">
+            <input type="text" name="name" placeholder="First Name"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <input type="text" name="surname" placeholder="Surname"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <input type="email" name="email" placeholder="Email Address"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <input type="password" name="password" placeholder="Password"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <input type="date" name="dob" placeholder="Date of Birth"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <select name="gender" class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="tel" name="phone" placeholder="Phone Number"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color">
+            <textarea name="help" placeholder="How can we assist you?"
+                class="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-accent-color"></textarea>
+
+            <div class="flex justify-center mt-4">
+                <button type="submit"
+                    class="w-full bg-primary-color text-black py-3 rounded-xl hover:bg-primary-color transition-all text-lg font-semibold shadow-md">Create
+                    Account</button>
+            </div>
+        </form>
+
+        <p class="text-center text-gray-600 mt-4">Already have an account? <a href="login.html"
+                class="text-accent-color font-semibold">Log in</a></p>
+
+        <div class="text-center mt-6">
+            <p class="text-gray-500">or sign up with</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-xl shadow-md flex items-center space-x-2">
+                    <img src="google-icon.png" class="w-5 h-5"> <span>Google</span>
+                </button>
+                <button class="bg-gray-800 text-white px-4 py-2 rounded-xl shadow-md flex items-center space-x-2">
+                    <img src="apple-icon.png" class="w-5 h-5"> <span>Apple</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

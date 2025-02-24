@@ -1,0 +1,36 @@
+<!-- Interest Selection Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehgez - Select Interests</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+        <h2 class="text-2xl font-semibold text-gray-800 text-center">Tell Us What You Like</h2>
+        <p class="text-center text-gray-600">Select the types of treatments you’re interested in.</p>
+
+        <form action="#" method="POST" class="space-y-4 mt-4">
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" name="interests" value="Haircuts" class="form-checkbox">
+                <span>Haircuts</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" name="interests" value="Nail Care" class="form-checkbox">
+                <span>Nail Care</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" name="interests" value="Skincare" class="form-checkbox">
+                <span>Skincare</span>
+            </label>
+            <button type="submit"
+                class="w-full bg-gray-900 text-white py-2 rounded-md hover:bg-gray-700">Continue</button>
+        </form>
+    </div>
+</body>
+
+</html>
